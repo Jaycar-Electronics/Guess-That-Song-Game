@@ -71,11 +71,13 @@ You should now have something that looks like this:
 With the case as chosen, I wasn't able to fit the thread screw onto it while it is still in the case, so I went without the screw and used some super-glue instead.
 
 ![glue](images/glue.jpg)
+
 _Drill out the hole and place the switch housing in. you'd probably want to use super glue up around where the green is in the picture. There is a little bit of overhang but it's not a big concern_
 
 4. Then just place the unit in the housing, clip into the button assembly and mount the socket sticking out of the other end
 
 ![controllerassembled](images/controllerassembled.jpg)
+
 _one controller finished, 3 more to go_
 
 #### Main unit assembly
@@ -88,18 +90,22 @@ Scroll down further for the finished look if you want to start with the end in m
 
 ##### Important
 notice that there is a resistor between the collector and the base pin. This can be confusing below, but look at the diagrams and pinouts to ensure that you have the connections right, especially if you have never played around with transistors before.
+
 ![mainf](images/main.png)
 
 
 1. Start by twisting two resistors together, one from each pack, and place a neat blob of solder to join them together like such:
 
 ![2resistors](images/2resistors.jpg)
+
 _note, in my prototype, I used 1k and 4k7 valued resistors. you will find that the values are fairly similar for voltage dividing purposes._
 
 clip the offshoots of the twist and keep them aside for later.
 
 Recall the pinout of the transistors:
+
 ![transistor pinout](images/pinout.jpg)
+
 _note, this isn't the same for every transistor, but most of them should be similar_
 
 Looking at the face of the transistor, left to right, you have the collector, base, and then emitter.
@@ -113,6 +119,7 @@ Looking at the face of the transistor, left to right, you have the collector, ba
 4. bend the lead of the resistor up behind the transistor, and bend the emitter up again so it looks like it is saluting, and place in the pin 2 of the socket connector, before soldering and clipping off the excess.
 
 ![unit](images/unit.jpg)
+
 _the red in this diagram highlights how the emitter pin was bent before clipping off the excess_
 
 5. Finally, bend Pin 1 of the socket connector close to the body of the socket, so that you can fit multiple units in.
@@ -142,7 +149,7 @@ Finally, connect all the Pin 1 leads together, and all the collector leads toget
 
 ![assembled](images/assembled.jpg)
 
-you now have finished your front grill assembly.
+You now have finished your front grill assembly.
 Cut up some female jumper leads or similar so that you can connect to the rPi GPIO header connector.
 
 The end of each resistor lead is the output to the LED for the controllers, and the unconnected Pin 3 of each socket adapter is the input from the switch. Using some heat shrink at this point is also a good idea as it keeps things mechanically secure and electrically isolated.
@@ -175,6 +182,7 @@ players = list(zip([LED(l) for l in led_pins],
             [Button(b) for b in button_pins]))
 
 ```
+
 #### Making it fit in the case
 
 the only final issue now is getting the whole thing in the case. Unfortunately, with having 4 controller ports, the final port is blocking one of the support beams holding down the case. Use a pair of side-cutters and trim down the beam so that it's almost as flush as the case.
@@ -227,6 +235,7 @@ Each black screen will guide you and ask you what's playing, one of the players 
 ![incorrect screen](images/game3.png)
 
 Finally, after all songs have played through or the `MC` presses `escape` - the score screen will show with a log history of who got what correct.
+
 ![score screen](images/scorescreen.png)
 
 ## Future Improvements
