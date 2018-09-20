@@ -1,4 +1,3 @@
-
 from gpiozero import LED, Button
 from time import sleep
 
@@ -13,7 +12,6 @@ the zip function will bring it to:
 
 '''
 
-global players
 players = list(zip([LED(x) for x in led_pins],
             [Button(x) for x in button_pins]))
 

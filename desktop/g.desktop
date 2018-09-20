@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Guess that Song
+Comment=Have fun, have a party!
+TryExec=guess-that-song
+Exec=guess-that-song
+Icon=/usr/share/pimixer/icons/hicolor/48x48/status/xfce4-mixer-no-muted.png
+Terminal=false
+Categories=Application;Game;
+StartupNotify=true
