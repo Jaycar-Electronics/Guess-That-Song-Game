@@ -66,7 +66,7 @@ You should now have something that looks like this:
 
 ![button](images/button.jpg)
 
-3. In terms of the case, you drill a 5mm hole on one side for the socket connector, and a larger 45mm hole for the button to fit through.
+3. In terms of the case, you drill a 5mm hole on one side for the socket connector, and a larger 24mm hole for the button to fit through.
 
 With the case as chosen, I wasn't able to fit the thread screw onto it while it is still in the case, so I went without the screw and used some super-glue instead.
 
